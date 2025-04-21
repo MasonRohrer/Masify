@@ -613,6 +613,7 @@ a {
 
 .block__header {
   text-align: center;
+  margin-bottom: 4rem;
 }
 
 .block__heading {
@@ -750,7 +751,6 @@ a {
   max-width: 700px;
   margin: 0 auto;
 }
-
 @media screen and (min-width: 768px) {
   .block-domain__prices {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
@@ -760,44 +760,34 @@ a {
 .block-plans .grid {
   gap: 8rem 4rem;
 }
-
 .block-plans .card {
   max-width: 500px;
   margin: 0 auto;
 }
-
 /* Features */
 .feature {
   gap: 4rem 2rem;
   margin: 12rem 0;
 }
-
 .feature:first-of-type {
   margin-top: 6rem;
 }
-
 .feature__heading {
   margin: 1rem 0;
 }
-
 .feature__image {
   width: 100%;
 }
-
 @media screen and (min-width: 768px) {
   .feature:nth-of-type(even) .feature__content {
     order: 2;
   }
 }
-
 /*Showcase Element*/
 .block-showcase__image > img{
   width: 100%;
 }
 
-.block-showcase {
-
-}
 @media screen and (min-width: 768px) {
     .block-showcase .grid {
       grid-template-columns: 50% 50%;
@@ -811,5 +801,66 @@ a {
     }
 }
 
-/*Testimonials*/
+/*Footer*/
+.footer {
+  background: #232323;
+}
+.footer a {
+  color: #777;
+  transition: color .3s;
+}
+.footer a:hover {
+  color: #fff;
+  
+}
+.footer__section {
+  padding: 2rem;
+  border-bottom: 1px solid #393939;
+}
+.footer__heading {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.footer__brand {
+  margin-top: 5rem;
+  text-align: center;
+}
+.footer__copyright {
+  text-align: center;
+  color: #fff;
+  opacity: .3;
+}
+.footer__section .list {
+  margin: 0;
+}
+.footer__brand img {
+  width: 100%;
+  max-width: 230px;
+}
+/*TODO: Consider refactoring this and applying it to all images.*/
+
+@media screen and (min-width: 768px) {
+  .footer__grid {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+  .footer .collapsible__chevron {
+    display: none;
+  }
+  .footer .collapsible__content {
+    display: contents;
+  }
+  .footer__brand {
+    order: -1;
+    margin-top: 1rem;
+  }
+  .footer__copyright {
+    font-size: 1.5rem;
+  }
+  .footer__heading {
+    font-size: 1.6rem;
+  }
+  .footer__section {
+    border: 0;
+  }
+}
 
