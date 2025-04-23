@@ -8,31 +8,26 @@
   --color-border: #ccc;
   --border-radius: 30px;
 }
-
 *,
 *::after,
 *::before {
   box-sizing: border-box;
 }
-
 /* Typography */
 ::selection {
   background: var(--color-primary);
   color: #fff;
 }
-
 html {
   /* 62.5% of 16px = 10px */
   font-size: 62.5%;
 }
-
 body {
   font-family: Inter, Arial, Helvetica, sans-serif;
   font-size: 2.4rem;
   line-height: 1.5;
   color: var(--color-body);
 }
-
 h1,
 h2,
 h3 {
@@ -206,7 +201,7 @@ a {
   font-weight: 600;
   margin: 1rem 0;
   outline: 0;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -297,12 +292,11 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
-
 .input-group .btn {
   margin: 4px;
 }
-
 @media screen and (min-width: 1024px) {
   .input {
     font-size: 1.5rem;
@@ -314,12 +308,10 @@ a {
   box-shadow: 0 0 20px 10px #f3f3f3;
   overflow: hidden;
 }
-
 .card__header,
 .card__body {
   padding: 2rem 3rem;
 }
-
 .card--primary .card__header {
   background: var(--color-primary);
   color: #fff;
@@ -537,6 +529,8 @@ a {
 .callout {
   padding: 4rem;
   border-radius: 5px;
+  position: relative;
+  
 }
 
 .callout--primary {
@@ -711,6 +705,9 @@ a {
 }
 
 /* Hero */
+.hero {
+  text-align: center;
+}
 .hero__tagline {
   font-size: 2rem;
   color: #b9c3cf;
@@ -731,6 +728,7 @@ a {
     text-align: left;
     align-self: center;
   }
+  
 }
 
 /* Domain Block */
@@ -742,8 +740,9 @@ a {
 }
 
 .block-domain__prices {
+  color: var(--color-headings);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 600;
